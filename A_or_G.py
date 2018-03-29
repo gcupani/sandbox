@@ -8,7 +8,7 @@ def note(f, r=1e5, d=1.0):
     return (np.sin(2*np.pi * np.arange(r*d) * f/r)).astype(np.float32)
 
 def plot(t, n, name, mode='time', labels=None):
-    """ Plot a note in the time domain """
+    """ Plot a note in the time or frequency domain """
     n = np.array(n)
     fig = plt.figure(figsize=(8,4))
     ax = fig.add_subplot(111)
